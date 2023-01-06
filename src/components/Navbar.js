@@ -50,11 +50,34 @@ export default function Navbar(props) {
               />
               <label
                 className="form-check-label"
-                htmlfor="flexSwitchCheckDefault"
+                htmlFor="flexSwitchCheckDefault"
                 style={{ color: props.mode === "light" ? "black" : "white" }}
               >
                 Enable {props.mode === "light" ? "dark" : "light"} mode
               </label>
+            </div>
+            <div className={`mx-3`}>
+              <button
+                className="btn"
+                style={{ color: props.mode === "light" ? "black" : "white" }}
+                onClick={props.changeRedTheme}
+              >
+                Red theme
+              </button>
+              <button
+                className="btn"
+                style={{ color: props.mode === "light" ? "black" : "white" }}
+                onClick={props.changeYellowTheme}
+              >
+                Yellow theme
+              </button>
+              <button
+                className="btn"
+                style={{ color: props.mode === "light" ? "black" : "white" }}
+                onClick={props.changeGreenTheme}
+              >
+                Green theme
+              </button>
             </div>
           </div>
         </nav>
